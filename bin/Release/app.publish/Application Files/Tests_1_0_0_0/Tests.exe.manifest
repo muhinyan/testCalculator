@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Tests.exe" version="1.0.0.0" publicKeyToken="4bf30e70d7256974" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Tests" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Tests.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          При необходимости изменить уровень управления учетными записями Windows замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если вы хотите использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+ -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.core.dll" size="139264">
+      <assemblyIdentity name="nunit.core" version="2.5.10.11092" publicKeyToken="96D09A1EB7F44A77" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>65fMdpXbof/QMGv096Iw0AoH8SU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.core.interfaces.dll" size="57344">
+      <assemblyIdentity name="nunit.core.interfaces" version="2.5.10.11092" publicKeyToken="96D09A1EB7F44A77" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>J6SlrhEgGJWhXJv18ipZbUsVmeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.framework.dll" size="139264">
+      <assemblyIdentity name="nunit.framework" version="2.5.10.11092" publicKeyToken="96D09A1EB7F44A77" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JcZq2Rk4/Un7KCxOr3Yljw4+SN4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.util.dll" size="126976">
+      <assemblyIdentity name="nunit.util" version="2.5.10.11092" publicKeyToken="96D09A1EB7F44A77" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>FfJPmJuKHtBTExQNqdU9gWVoSfA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit-console-runner.dll" size="36864">
+      <assemblyIdentity name="nunit-console-runner" version="2.5.10.11092" publicKeyToken="96D09A1EB7F44A77" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>A7v5DhR+KXmqPU1H9Bt+FxyhLLU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tests.exe" size="6144">
+      <assemblyIdentity name="Tests" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>psTwxc3ZnWZ2Va+R8JETkRHZUd4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Winium.Desktop.Driver.exe" size="4947456">
+      <assemblyIdentity name="Winium.Desktop.Driver" version="1.2.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>LC+Av4bCtsi/DXYoZqwF1f9GXz8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=мухинян-ПК\мухинян" issuerKeyHash="3036b75bf391e078dbbe476ff5ef683f0643a4dd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>cujx1MBUuEjs0Xb6TV4vJHaqpAE=</DigestValue></Reference></SignedInfo><SignatureValue>b0zgBBHW3pcNcu+8tGbr4iMwWEXmM7Ga9wR+QUD/zC6EnrXtMfRKYKs49+aQK35aEsfIi5niCvqh07TXfmTnwsOv8c6fxEiH8KDF3f5yJGIkqmPH3OdBaqcV/+YUrp3/Ia3rzq2iFjhOlMIF5i8sQzVMh1T1ebUCeZQ7p0v2NQM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rRdEH1xi5KsobGcw1B+dOWExaiVkyaCSOIHUc/FF0QX4wffe86/xflTSg/JfWbGa059t2oe+FwDHZJTk3jmAEqvUASjknHAnclMwPS8uOyYoMjx2OSWmmo14zrSK+zb4KAflaBT8OEaKdZB/Kv7jLpN7FbaQp0o3W7le07/7kYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="01a4aa76242f5e4dfa76d1ec48b854c0d4f1e872" Description="" Url=""><as:assemblyIdentity name="Tests.exe" version="1.0.0.0" publicKeyToken="4bf30e70d7256974" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=мухинян-ПК\мухинян</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lD9zRMqvcAOmsQQuzom7/R1TbTI=</DigestValue></Reference></SignedInfo><SignatureValue>bHHtTf6e3fk7t2ainRaC7TmXW2h+SBSNNRWeqfXTftvh4PlgJ7TdZ+LyMpVpsdEfKn5wgMpPtZGvB7gutv6LMpKx72iC5WGUc1tF74dp6HwqQhs3xrZt1WyK6HXsbEdI1Z3fZ6Wyou9THLMiG5wj0rRJVHmpyV5XJQzC9xO6HG0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rRdEH1xi5KsobGcw1B+dOWExaiVkyaCSOIHUc/FF0QX4wffe86/xflTSg/JfWbGa059t2oe+FwDHZJTk3jmAEqvUASjknHAnclMwPS8uOyYoMjx2OSWmmo14zrSK+zb4KAflaBT8OEaKdZB/Kv7jLpN7FbaQp0o3W7le07/7kYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQH0Hq2pz8KKNABawFGIpPxTANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQEPARDBEUEOAQ9BE8EPQAtBB8EGgBcBDwEQwRFBDgEPQRPBD0wHhcNMjAwMzEyMDEzMjM5WhcNMjEwMzEyMDczMjM5WjAvMS0wKwYDVQQDHiQEPARDBEUEOAQ9BE8EPQAtBB8EGgBcBDwEQwRFBDgEPQRPBD0wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAK0XRB9cYuSrKGxnMNQfnTlhMWolZMmgkjiB1HPxRdEF+MH33vOv8X5U0oPyX1mxmtOfbdqHvhcAx2SU5N45gBKr1AEo5JxwJ3JTMD0vLjsmKDI8djklppqNeM60ivs2+CgH5WgU/DhGinWQfyr+4y6TexW2kKdKN1u5XtO/+5GFAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEALNCO2GW9riZjyBLTSfZukTEKVboXo5S0AFr3oI/X0+JMc3R2bZxf1eVEW1Z51N7j0qgBfIM58q2fAsaEwbmFLEn9x1z1oeuYRT9aM1dk3KG1kBG6eIgHUYzhEVNr2IoSylvN7auqF1jF7MkG/z+NwLCFSyIu0jah+168m8OLp9c=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
